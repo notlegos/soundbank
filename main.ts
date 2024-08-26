@@ -25,12 +25,23 @@ function PlaySound (category: string) {
         thisSound2 = playlistReady.shift()
         relativeVolumeA = parseFloat(thisSound2.split("_")[2]) / 100
         basic.pause(notLegos.playsFor(thisSound2, potRead(), notLegos.DigitalRJPin.J3))
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
     } else {
     	
     }
-}
-function getReadySound () {
-	
 }
 function printArray (toPrint: any[]) {
     lineCount = toPrint.length
@@ -42,15 +53,6 @@ function printArray (toPrint: any[]) {
         }
     } else {
         Connected.showUserText(1, "[Empty]")
-    }
-}
-function playSoundFor (category: string) {
-    if (category == "Ready") {
-        let thisSound = ""
-        relativeVolumeA = parseFloat(thisSound.split("_")[2]) / 100
-        return notLegos.playsFor(thisSound, potRead(), notLegos.DigitalRJPin.J3)
-    } else {
-        return 0
     }
 }
 Connected.buttonEvent(Connected.DigitalRJPin.J2, Connected.ButtonStateList.D, function () {
@@ -84,9 +86,6 @@ function shuffleList (listIn: string[]) {
     }
     listOut.shift()
     return listOut
-}
-function getLevelMusic () {
-	
 }
 function setSounds (player: string) {
     soundString = notLegos.playerSoundString(player)
@@ -167,7 +166,7 @@ function setMusic (player: string) {
             mbWon.push(thisSound2)
         } else if (thisLetter == "L") {
             mbLost.push(thisSound2)
-        } else if (thisLetter == "F") {
+        } else if (thisLetter == "C") {
             sbCorrect.push(thisSound2)
         } else if (thisLetter == "I") {
             sbIncorrect.push(thisSound2)
